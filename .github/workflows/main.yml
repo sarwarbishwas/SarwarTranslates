@@ -46,9 +46,8 @@ jobs:
           which gradle
           gradle --version
 
-      - name: Build APK
-        run: |
-          gradle assembleDebug
+     - name: Show Gradle tasks
+  run: ./gradlew tasks
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
